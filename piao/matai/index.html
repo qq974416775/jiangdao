@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>朴牧师马太福音</title>
+
+<link rel="stylesheet" href="css/smusic.css">
+
+</head>
+<body>
+
+<div class="grid-music-container f-usn">
+    <div class="m-music-play-wrap">
+        <div class="u-cover"></div>
+        <div class="m-now-info">
+            <h1 class="u-music-title"><small>...</small><small>...</small></h1>
+            <div class="m-now-controls">
+                <div class="u-control u-process">
+                    <span class="buffer-process"></span>
+                    <span class="current-process"></span>
+                </div>
+                <div class="u-control u-time">00:00/00:00</div>
+                <div class="u-control u-volume">
+                    <div class="volume-process" data-volume="0.50">
+                        <span class="volume-current"></span>
+                        <span class="volume-bar"></span>
+                        <span class="volume-event"></span>
+                    </div>
+                    <a class="volume-control"></a>
+                </div>
+            </div>
+            <div class="m-play-controls">
+                <a class="u-play-btn prev" title="上一曲"></a>
+                <a class="u-play-btn ctrl-play play" title="暂停"></a>
+                <a class="u-play-btn next" title="下一曲"></a><br>
+               
+            </div>
+        </div>
+    </div>
+    <div class="f-cb">&nbsp;</div>
+    <div class="m-music-list-wrap"></div>
+</div>
+
+<script src="js/smusic.min.js"></script>
+<script>
+var musicList = [
+	{
+		title : '朴牧师马太福音',
+		singer : '第1讲',
+		cover  : '',
+		src    : 'img/1 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第2讲',
+		cover  : '',
+		src    : 'img/2 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第3讲',
+		cover  : '',
+		src    : 'img/3 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第4讲',
+		cover  : '',
+		src    : 'img/4 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第5讲',
+		cover  : '',
+		src    : 'img/5 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第6讲',
+		cover  : '',
+		src    : 'img/6 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第7讲',
+		cover  : '',
+		src    : 'img/7 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第8讲',
+		cover  : '',
+		src    : 'img/8 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第9讲',
+		cover  : '',
+		src    : 'img/9 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第10讲',
+		cover  : '',
+		src    : 'img/10 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第11讲',
+		cover  : '',
+		src    : 'img/11 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第12讲',
+		cover  : '',
+		src    : 'img/12 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第13讲',
+		cover  : '',
+		src    : 'img/13 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第14讲',
+		cover  : '',
+		src    : 'img/14 .mp3'
+	},
+
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第15讲',
+		cover  : '',
+		src    : 'img/15 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第16讲',
+		cover  : '',
+		src    : 'img/16 .mp3'
+	},
+		
+	
+{
+		title : '朴牧师马太福音',
+		singer : '第17讲',
+		cover  : '',
+		src    : 'img/17 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第18讲',
+		cover  : '',
+		src    : 'img/18 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第19讲',
+		cover  : '',
+		src    : 'img/19 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第20讲',
+		cover  : '',
+		src    : 'img/20 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第21讲',
+		cover  : '',
+		src    : 'img/21 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第22讲',
+		cover  : '',
+		src    : 'img/22 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第23讲',
+		cover  : '',
+		src    : 'img/23 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第24讲',
+		cover  : '',
+		src    : 'img/24 .mp3'
+	},
+
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第25讲',
+		cover  : '',
+		src    : 'img/25 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第26讲',
+		cover  : '',
+		src    : 'img/26 .mp3'
+	},
+		
+	
+{
+		title : '朴牧师马太福音',
+		singer : '第27讲',
+		cover  : '',
+		src    : 'img/27 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第28讲',
+		cover  : '',
+		src    : 'img/28 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第29讲',
+		cover  : '',
+		src    : 'img/29.mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第30讲',
+		cover  : '',
+		src    : 'img/30 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第31讲',
+		cover  : '',
+		src    : 'img/31 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第32讲',
+		cover  : '',
+		src    : 'img/32 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第33讲',
+		cover  : '',
+		src    : 'img/33 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第34讲',
+		cover  : '',
+		src    : 'img/34 .mp3'
+	},
+
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第35讲',
+		cover  : '',
+		src    : 'img/35 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第36讲',
+		cover  : '',
+		src    : 'img/36 .mp3'
+	},
+		
+	
+{
+		title : '朴牧师马太福音',
+		singer : '第37讲',
+		cover  : '',
+		src    : 'img/37 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第38讲',
+		cover  : '',
+		src    : 'img/38 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第39讲',
+		cover  : '',
+		src    : 'img/39 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第40讲',
+		cover  : '',
+		src    : 'img/40 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第41讲',
+		cover  : '',
+		src    : 'img/41 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第42讲',
+		cover  : '',
+		src    : 'img/42 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第43讲',
+		cover  : '',
+		src    : 'img/43 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第44讲',
+		cover  : '',
+		src    : 'img/44 .mp3'
+	},
+
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第45讲',
+		cover  : '',
+		src    : 'img/45 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第46讲',
+		cover  : '',
+		src    : 'img/46 .mp3'
+	},
+		
+	
+{
+		title : '朴牧师马太福音',
+		singer : '第47讲',
+		cover  : '',
+		src    : 'img/47 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第48讲',
+		cover  : '',
+		src    : 'img/48 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第49讲',
+		cover  : '',
+		src    : 'img/49 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第50讲',
+		cover  : '',
+		src    : 'img/50 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第51讲',
+		cover  : '',
+		src    : 'img/51 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第52讲',
+		cover  : '',
+		src    : 'img/52 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第53讲',
+		cover  : '',
+		src    : 'img/53 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第54讲',
+		cover  : '',
+		src    : 'img/54 .mp3'
+	},
+
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第55讲',
+		cover  : '',
+		src    : 'img/55 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第56讲',
+		cover  : '',
+		src    : 'img/56 .mp3'
+	},
+		
+	
+{
+		title : '朴牧师马太福音',
+		singer : '第57讲',
+		cover  : '',
+		src    : 'img/57 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第58讲',
+		cover  : '',
+		src    : 'img/58 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第59讲',
+		cover  : '',
+		src    : 'img/59 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第60讲',
+		cover  : '',
+		src    : 'img/60 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第61讲',
+		cover  : '',
+		src    : 'img/61 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第62讲',
+		cover  : '',
+		src    : 'img/62 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第63讲',
+		cover  : '',
+		src    : 'img/63 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第64讲',
+		cover  : '',
+		src    : 'img/64 .mp3'
+	},
+
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第65讲',
+		cover  : '',
+		src    : 'img/65 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第66讲',
+		cover  : '',
+		src    : 'img/66 .mp3'
+	},
+		
+	
+{
+		title : '朴牧师马太福音',
+		singer : '第67讲',
+		cover  : '',
+		src    : 'img/67 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第68讲',
+		cover  : '',
+		src    : 'img/68 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第69讲',
+		cover  : '',
+		src    : 'img/69 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第70讲',
+		cover  : '',
+		src    : 'img/70 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第71讲',
+		cover  : '',
+		src    : 'img/71 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第72讲',
+		cover  : '',
+		src    : 'img/72 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第73讲',
+		cover  : '',
+		src    : 'img/73 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第74讲',
+		cover  : '',
+		src    : 'img/74 .mp3'
+	},
+
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第75讲',
+		cover  : '',
+		src    : 'img/75 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第76讲',
+		cover  : '',
+		src    : 'img/76 .mp3'
+	},
+		
+	
+{
+		title : '朴牧师马太福音',
+		singer : '第77讲',
+		cover  : '',
+		src    : 'img/77 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第78讲',
+		cover  : '',
+		src    : 'img/78 .mp3'
+	},
+{
+		title : '朴牧师马太福音',
+		singer : '第79讲',
+		cover  : '',
+		src    : 'img/79 .mp3'
+	},
+		
+	{
+		title : '朴牧师马太福音',
+		singer : '第80讲',
+		cover  : '',
+		src    : 'img/80 .mp3'
+	},
+];
+new SMusic({
+	musicList:musicList
+});
+</script>
+
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</p>
+</div>
+</div>
+</body>
+</html>
